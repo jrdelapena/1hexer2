@@ -36,6 +36,14 @@ body > footer {
     transition: border-bottom-color 0.5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 
+p.cont-centered,
+h2.cont-centered {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 #main-nav > a:hover {
     border-bottom: 3px solid #ff0;
 }
@@ -48,6 +56,19 @@ body > footer {
 .flex-vertical {
     display: flex;
     flex-direction: column;
+}
+
+.flex-horizontal-scrollable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.flex-horizontal-scrollable > * {
+    margin: 2px;
 }
 
 #copyinf {
