@@ -1,0 +1,36 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50px;
+    width: 95vw;
+    
+    border-width: 2px;
+    border-color: #f0f;
+    border-style: solid;
+    background-color: #000;
+}
+
+#copyinf {
+    display: flex;
+    flex-direction: row;
+}
+
+#copyinf > * {
+    margin: 5px;
+}
+
+a {
+    color: #5bc0de;
+}
+
+a:visited {
+    color: #f9847b;
+}
