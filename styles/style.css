@@ -3,10 +3,11 @@ body {
     color: #fff;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
+body > header {
+    margin-top: 30px;
+}
 
+footer {
     margin-left: auto;
     margin-right: auto;
     min-height: 50px;
@@ -16,6 +17,37 @@ footer {
     border-color: #f0f;
     border-style: solid;
     background-color: #000;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-nav > a {
+    border-bottom: 3px solid #fff;
+    text-decoration: none;
+    color: white;
+    flex-grow: 1;
+    margin: 0;
+    text-align: center;
+
+    min-width: 0;
+    transition: border-bottom-color 0.5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+#main-nav > a:hover {
+    border-bottom: 3px solid #ff0;
+}
+
+#main-nav > a[href="#"] {
+    border-bottom: 3px solid #f00 !important;
+    color: #f00 !important;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
 }
 
 #copyinf {
